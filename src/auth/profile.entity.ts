@@ -1,19 +1,9 @@
 import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 
 @Entity()
-export class Event {
+export class Profile {
   @PrimaryGeneratedColumn('uuid')
   id: number;
-
   @Column()
-  name: string;
-
-  @Column()
-  description: string;
-
-  @Column()
-  when: Date;
-
-  @Column()
-  address: string;
+  age: number;
 }
